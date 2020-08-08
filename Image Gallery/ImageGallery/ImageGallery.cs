@@ -41,6 +41,7 @@ namespace ImageGallery
             imagesList = await datafetch.GetImageData(_searchBox.Text);
             AddTiles(imagesList);
             statusStrip1.Visible = false;
+            _imageTileControl.Text = "Your search results are";
         }
 
         private void _exportImage_Click(object sender, EventArgs e)
